@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      #card {
+        width: 270px;
+        text-align: center;
+        padding: 5px;
+        box-shadow: 0 0 10px black;
+      }
+      #container {
+        display: flex;
+        justify-content: space-evenly;
+      }
+    </style>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      //   var card = (
+      //     <div id="card">
+      //       <img
+      //         src="https://static.vecteezy.com/system/resources/previews/029/891/975/non_2x/business-american-man-in-light-cream-ai-generative-free-photo.jpg"
+      //         width="100%"
+      //         height="200"
+      //         alt=""
+      //       />
+      //       <h3>Rohan Verma</h3>
+      //       <p>
+      //         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
+      //         veniam?
+      //       </p>
+      //     </div>
+      //   );
+
+      function createCard(username, image) {
+        return (
+          <div id="card">
+            <img src={image} width="100%" height="200" alt="" />
+            <h3>{username}</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non,
+              veniam?
+            </p>
+          </div>
+        );
+      }
+
+      function app() {
+        return (
+          <div id="container">
+            {createCard(
+              "Rohan sharma",
+              "https://static.vecteezy.com/system/resources/previews/029/891/975/non_2x/business-american-man-in-light-cream-ai-generative-free-photo.jpg"
+            )}
+            {createCard(
+              "Ajay Verma",
+              "https://img.freepik.com/premium-photo/professional-males-colleagues-hd-8k-wallpaper-stock-photographic-image_1033957-29162.jpg"
+            )}
+            {createCard(
+              "Riya sharma",
+              "https://static.vecteezy.com/system/resources/previews/048/378/864/non_2x/a-young-happy-pretty-smiling-professional-business-woman-free-photo.jpg"
+            )}
+            {createCard(
+              "Dina Roy",
+              "https://static.vecteezy.com/system/resources/previews/025/474/309/non_2x/portrait-of-a-professional-woman-in-a-suit-business-woman-standing-in-an-office-ai-generated-photo.jpg"
+            )}
+          </div>
+        );
+      }
+
+      ReactDOM.render(app(), document.getElementById("root"));
+    </script>
+  </body>
+</html>

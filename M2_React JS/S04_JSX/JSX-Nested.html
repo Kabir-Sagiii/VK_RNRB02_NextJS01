@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var div = (
+        <div id="div1">
+          <div id="div2">
+            <h2>This is heading</h2>
+            <div id="div3">
+              <p>This is Para</p>
+            </div>
+          </div>
+        </div>
+      );
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>

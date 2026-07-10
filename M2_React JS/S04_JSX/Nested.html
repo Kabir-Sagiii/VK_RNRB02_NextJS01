@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script>
+      //React JS Code
+      var div = React.createElement(
+        "div",
+        { id: "div1" },
+        React.createElement("div", { id: "div2" }, [
+          React.createElement("h2", null, "h2 element"),
+          React.createElement(
+            "div",
+            { id: "div3" },
+            React.createElement("p", null, "this para element")
+          ),
+        ])
+      );
+
+      ReactDOM.render(div, document.getElementById("root"));
+    </script>
+  </body>
+</html>

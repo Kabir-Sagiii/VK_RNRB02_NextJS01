@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+      var info = "Kabir";
+      function getUser() {
+        return "Next JS";
+      }
+
+      // JSX Element
+      const heading = <h1> React JS Library </h1>;
+
+      const input = <input type="text" />;
+
+      const h2 = <h2> {info} </h2>;
+
+      const p = (
+        <p>
+          {getUser()} {5 + 10}
+        </p>
+      );
+
+      //Loading JSX elements in Browser DOM (structure created in object pattern)
+      ReactDOM.render([heading, input, h2, p], document.getElementById("root"));
+    </script>
+  </body>
+</html>

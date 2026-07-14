@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./Task.css" />
+    <script
+      crossorigin
+      src="https://unpkg.com/react@18/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      function Card(props) {
+        return (
+          <div id="card">
+            <img src={props.image} width="100%" height="200" alt="" />
+            <h4>{props.offer}</h4>
+          </div>
+        );
+      }
+
+      function Advertise(props) {
+        return (
+          <div id="advertise">
+            <div id="title">
+              <h1>{props.title}</h1>
+            </div>
+            <div id="cards">
+              <Card
+                image={
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/chopper/4/m/y/manual-hand-press-push-chopper-with-4-blades-for-effortless-enriched-0-original-imah5kvtgpzurjqa.jpeg?q=70"
+                }
+                offer={"off upto 20%"}
+              />
+              <Card
+                image={
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe-rack/0/e/n/37-0-49-0-0-2-plastic-cubort-5-shelf-5-door-plastic-black-shoe-original-imahggay5b5gqsps.jpeg?q=70"
+                }
+                offer={"flat discount 500"}
+              />
+              <Card
+                image={
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe-rack/a/c/7/4-0-8-0-0-5-shoes-rack-shoe-rack-shoes-stand-accessories-cover-original-imahkugg3kyqydzf.jpeg?q=70"
+                }
+                offer={"30% off"}
+              />
+              <Card
+                image={
+                  "https://rukminim2.flixcart.com/image/612/612/xif0q/shoe-rack/b/6/8/32-85-0-3-plasticblack-shoe-rack-with-cover-plastic-double-5-original-imahgnnvtdnpmunz.jpeg?q=70"
+                }
+                offer={"Min 20% off"}
+              />
+            </div>
+          </div>
+        );
+      }
+
+      function App() {
+        return (
+          <div>
+            <Advertise title={"Best Deal's"} />
+            <Advertise title={"Electronic's"} />
+            <Advertise title={"Home & Decor's"} />
+          </div>
+        );
+      }
+
+      ReactDOM.render(<App />, document.getElementById("root"));
+    </script>
+  </body>
+</html>

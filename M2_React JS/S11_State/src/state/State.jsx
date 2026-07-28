@@ -1,7 +1,10 @@
 import {useState} from "react"
 import "./State.css"
+
+
+
 function State() {
-            const [state,setState]=useState(999)
+    const [state,setState]=useState(999)
             // data = [state,setterFn]
 
             function updateMystate(){
@@ -12,11 +15,13 @@ function State() {
             
   return (
     <div id="state">
-        <h1>State Concept : {state}</h1>
+        <h1>State Concept : {state} </h1>
         
         <button onClick={updateMystate}> Update Data :{state} </button>
     </div>
   )
+
+ 
 }
 
 export default State

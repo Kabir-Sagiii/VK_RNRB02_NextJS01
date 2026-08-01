@@ -1,0 +1,10 @@
+.banner{
+    width: 90%;
+    height: 470px;
+    box-shadow: 0 0 10px black;
+    margin: 50px auto;
+    background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/006/774/small_2x/paper-art-shopping-online-on-smartphone-and-new-buy-sale-promotion-backgroud-for-banner-market-ecommerce-free-vector.jpg");
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}

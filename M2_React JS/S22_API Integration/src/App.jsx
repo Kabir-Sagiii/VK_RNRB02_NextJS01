@@ -7,6 +7,7 @@ import { AuthContext } from './context/authContext'
 import UseRefComp from './components/use-Ref/UseRefComp'
 import RefDOM from './components/use-Ref/RefDOM'
 import AxiosConcept from './components/axios/AxiosConcept'
+import RandomUser from './components/axios/RandomUser'
 import UseReducerconcept from './components/use-Reducer/UseReducerconcept'
 function App() {
   const [isLoggedIn,setIsLoggedIn] = useState(false)
@@ -21,7 +22,7 @@ function App() {
 
   return (
     <div>
-     <AxiosConcept />
+    <RandomUser />
     
   
     </div>

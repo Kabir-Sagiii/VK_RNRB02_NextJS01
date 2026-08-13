@@ -1,0 +1,16 @@
+.random-user{
+    padding: 50px;
+}
+.random-user h1,p{
+    margin: 20px 0px;
+}
+.random-user button {
+    padding: 11px 30px;
+}
+.random-user ol {
+    margin-top: 50px;
+    
+    width:90%;
+    color:green;
+    font-size: 24px;
+}

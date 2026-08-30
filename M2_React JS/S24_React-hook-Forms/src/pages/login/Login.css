@@ -1,0 +1,12 @@
+.login {
+    margin: 50px;
+    width: 270px;
+    box-shadow: 0 0 10px black;
+    padding: 30px;
+}
+.login div {
+    margin: 15px 0px;
+}
+.login label {
+    margin-right: 10px;
+}

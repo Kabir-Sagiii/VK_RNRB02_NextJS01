@@ -1,0 +1,13 @@
+.username {
+    margin: 50px;
+}
+.username input {
+    margin-right: 10px;
+}
+.display {
+    margin: 50px;
+}
+.display p {
+    font-size: 21px;
+    color: darkgreen;
+}

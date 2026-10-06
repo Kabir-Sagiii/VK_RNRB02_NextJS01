@@ -1,11 +1,13 @@
-import Profile from "./components/profile/Profile";
+"use client"
 import Link from "next/link";
+import { f1 } from "./server-api/f1";
 export default function Home() {
+
+ 
   return (
-    <div className="m-10 text-blue-800 text-4xl">
-       <h1>Welcome to Next JS</h1>
-       <Profile />
-       <Link href="/pages/sign-in">Switch to Signin</Link>
+    <div className="">
+     
+
     </div>
   );
 }

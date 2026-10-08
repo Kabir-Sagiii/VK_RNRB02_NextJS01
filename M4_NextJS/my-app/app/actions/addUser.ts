@@ -10,7 +10,7 @@ async function addUser(data:any){
 const collection =  db?.collection("users");
 
 //inserting the data
-const data = await collection?.insertOne({name:"AshokIT"});
+const data = await collection?.insertOne({name:"Vikram",city:"hyd"});
 if(data){
 console.log(data)
 }else {
